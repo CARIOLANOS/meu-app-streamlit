@@ -4,9 +4,9 @@ import pygame
 import time
 
 # Inicializa o pygame para tocar sons
-#pygame.mixer.init()
-#som_sucesso = pygame.mixer.Sound("success.wav")  # Som de sucesso
-#som_erro = pygame.mixer.Sound("error.wav")        # Som de erro
+pygame.mixer.init()
+som_sucesso = pygame.mixer.Sound("success.wav")  # Som de sucesso
+som_erro = pygame.mixer.Sound("error.wav")        # Som de erro
 
 # Função para gerar uma nova pergunta
 def gerar_pergunta(operacao):
@@ -31,7 +31,7 @@ def gerar_pergunta(operacao):
 def verificar_resposta(resposta_usuario, resposta_certa):
     if resposta_usuario == resposta_certa:
         st.success("Muito bem! Você acertou!")
-        #som_sucesso.play()  # Toca o som de sucesso
+        som_sucesso.play()  # Toca o som de sucesso
         return True
     else:
         st.error(f"Ops! A resposta certa é {resposta_certa}. Tente novamente!")
