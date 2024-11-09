@@ -12,10 +12,10 @@ import time
 def gerar_pergunta(operacao):
     numero1 = random.randint(1, 10)
     numero2 = random.randint(1, 10)
-    if operacao == "Adição":
+    if operacao == "adicao":
         pergunta = f"Quanto é {numero1} + {numero2}?"
         resposta_certa = numero1 + numero2
-    elif operacao == "Multiplicação":
+    elif operacao == "multiplicacao":
         pergunta = f"Quanto é {numero1} * {numero2}?"
         resposta_certa = numero1 * numero2
     elif operacao == "Subtracao":
