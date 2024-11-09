@@ -41,6 +41,7 @@ def verificar_resposta(resposta_usuario, resposta_certa):
 # Função principal da aplicação
 def main():
     st.title("Bernardo Aprendendo Tabuada Divertida")
+    st.header("Cariolano")
 
     # Inicializa as variáveis de estado
     if "pontos" not in st.session_state:
