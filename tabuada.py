@@ -16,7 +16,7 @@ def gerar_pergunta(operacao):
         pergunta = f"Quanto é {numero1} + {numero2}?"
         resposta_certa = numero1 + numero2
     elif operacao == "multiplicacao":
-        pergunta = f"Quanto é {numero1} * {numero2}?"
+        pergunta = f"Quanto é {numero1} x {numero2}?"
         resposta_certa = numero1 * numero2
     elif operacao == "Subtracao":
         pergunta = f"Quanto é {numero1} - {numero2}?"
@@ -55,7 +55,7 @@ def main():
     if "mostrar_baloes" not in st.session_state:
         st.session_state.mostrar_baloes = False
 
-    operacao = st.radio("Escolha a operação:", ["multiplicacao", "adicao", "subtracao", "divisao"])
+    operacao = st.radio("Escolha a operação:", ["adicao", "multiplicacao", "subtracao", "divisao"])
 
     if "pergunta" not in st.session_state or "resposta_certa" not in st.session_state:
         st.session_state.pergunta, st.session_state.resposta_certa = gerar_pergunta(operacao)
