@@ -12,18 +12,18 @@ import time
 def gerar_pergunta(operacao):
     numero1 = random.randint(1, 10)
     numero2 = random.randint(1, 10)
-    if operacao == "multiplicacao":
-        pergunta = f"Qual é {numero1} x {numero2}?"
-        resposta_certa = numero1 * numero2
-    elif operacao == "adicao":
-        pergunta = f"Qual é {numero1} + {numero2}?"
+    if operacao == "Adição":
+        pergunta = f"Quanto é {numero1} + {numero2}?"
         resposta_certa = numero1 + numero2
-    elif operacao == "subtracao":
-        pergunta = f"Qual é {numero1} - {numero2}?"
+    elif operacao == "Multiplicação":
+        pergunta = f"Quanto é {numero1} * {numero2}?"
+        resposta_certa = numero1 * numero2
+    elif operacao == "Subtracao":
+        pergunta = f"Quanto é {numero1} - {numero2}?"
         resposta_certa = numero1 - numero2
-    elif operacao == "divisao":
+    elif operacao == "Divisao":
         numero1 = numero2 * random.randint(1, 10)  # Para evitar divisão por zero
-        pergunta = f"Qual é {numero1} ÷ {numero2}?"
+        pergunta = f"Quanto é {numero1} ÷ {numero2}?"
         resposta_certa = numero1 // numero2  # Divisão inteira
     return pergunta, resposta_certa
 
