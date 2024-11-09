@@ -35,7 +35,7 @@ def verificar_resposta(resposta_usuario, resposta_certa):
         return True
     else:
         st.error(f"Ops! A resposta certa é {resposta_certa}. Tente novamente!")
-        #som_erro.play()  # Toca o som de erro
+        som_erro.play()  # Toca o som de erro
         return False
 
 # Função principal da aplicação
